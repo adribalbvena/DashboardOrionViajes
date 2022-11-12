@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap');
+
+
+body {
+    background-image: linear-gradient(to top left, #D95032, #006175);
+    height: 100vh;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.logincard-container {
+    background-color: white;
+    border-radius: 0.4rem;
+    border: 1px solid #006175;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+    color:#006175;
+}
+
+input[type="email"],
+input[type="password"] {
+  height: 30px;
+  border: 1px solid #4e4d4d;
+  border-radius: 0.2rem;
+}
+
+.input-container {
+    font-family: 'Roboto', sans-serif;
+    color: #4e4d4d;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin: 0.5rem;
+}
+
+
+button {
+    font-size: 1rem;
+    cursor: pointer;
+    background: #D95032;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.2rem;
+    margin: 1rem;
+}
+
+button:hover {
+    background-color: #b4381d;
+    color:rgb(197, 194, 194)
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
