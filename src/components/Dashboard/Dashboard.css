@@ -13,3 +13,14 @@ h2 {
     font-weight: 100;
 
 }
+
+.chart-container {
+    background-color: white;
+    display: flex;
+    margin:auto;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0.4rem;
+    box-shadow: 10px 11px 10px -12px rgba(0,0,0,0.61);
+}

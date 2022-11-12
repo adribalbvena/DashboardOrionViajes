@@ -10,7 +10,7 @@ export const Card = ({entity, title}) => {
     <div className='card-container'>
         <div className='card-content'>
             <div className='card-number'>
-            <h1>{value && value.count}</h1>
+            <h1>{value}</h1>
             </div>
             <div className='card-title'>
             <p>{title}</p>
