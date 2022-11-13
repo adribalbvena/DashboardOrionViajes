@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../../auth';
 import "./Login.css"
 
 
@@ -6,9 +8,9 @@ import "./Login.css"
 export const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-  
-    //const [isLogged, setLogged] = useState(false);
-  
+    const auth = useAuth();
+    const navigate = useNavigate();
+    
     const isIncompleteData = !email || !password; 
 
     const onSubmit = async (event) => {
@@ -18,17 +20,18 @@ export const Login = () => {
           return;
         }
     
-        // try {
-        //   await signIn(email, password);
-        //   navigate('dashboard', { replace: true })
+        try {
+          await auth.login(email, password);
+          navigate('dashboard', { replace: true })
     
-        // } catch (err) {
-        //   alert("Acceso inválido, correo electrónico y/o contraseña incorrecta");
-        //   return;
-        // }
+        } catch (err) {
+          alert("Acceso inválido, correo electrónico y/o contraseña incorrecta");
+          return;
+        }
       };
     
-  return (<div className='logincard-container'>
+  return (
+  <div className='logincard-container'>
   <div className='logincard-content'>
       <h4 className='login-title'>Login</h4>
       <form onSubmit={onSubmit}>

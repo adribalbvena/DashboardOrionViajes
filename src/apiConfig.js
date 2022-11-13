@@ -1,9 +1,8 @@
 import axios from "axios";
 
-//http://46.17.108.34:3001/admin/
 
 export const orion = {
-    urlBase: "http://localhost:3001/admin",
+    urlBase: "http://46.17.108.34:3001/admin/",
     entity: {
         travelsByMonth: "/travels?period=month",
         usersByMonth: "/users?period=month",
