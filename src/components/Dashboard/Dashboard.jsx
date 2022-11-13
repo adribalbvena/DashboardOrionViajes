@@ -5,10 +5,12 @@ import { apiEntity } from "../../apiConfig"
 import { CakeChart } from "../Charts/CakeChart"
 import { BarChart } from "../Charts/BarChart"
 import { AreaChart } from "../Charts/AreaChart"
+import { Navbar } from "../Navbar/Navbar"
 
 export const Dashboard = () => {
   return (
     <>
+      <Navbar/>
       <h2>Métricas del último mes</h2>
       <div className="row">
         <Card entity={apiEntity.usersByMonth} title={"Usuarios Registrados"} />
