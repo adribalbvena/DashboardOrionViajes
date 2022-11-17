@@ -1,27 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap');
 
-
-body {
-    background-image: linear-gradient(to top left, #D95032, #006175);
-    height: 100vh;
-}
-
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+body {
+    padding-bottom: 2rem;
+    background-attachment:fixed;
+    background-origin:initial;
+    background-repeat:no-repeat;
+    height:100%;
+
+    background: -moz-linear-gradient(to top left, #D95032, #006175);
+    /* FF3.6+ */
+
+    background: -webkit-gradient(to top left, #D95032, #006175); 
+    /* Chrome,Safari4+ */
+
+    background: -webkit-linear-gradient(to top left, #D95032, #006175);
+    /* Chrome10+,Safari5.1+ */
+
+    background: -o-linear-gradient(to top left, #D95032, #006175);
+    /* Opera 11.10+ */
+
+    background: -ms-linear-gradient(to top left, #D95032, #006175); /* IE10+ */
+
+    background: linear-gradient(to top left, #D95032, #006175);
+}
+
+
 .logincard-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logincard {
     background-color: white;
     border-radius: 0.4rem;
     border: 1px solid #006175;
     width: 300px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: auto;
-    margin-top: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 h4 {
